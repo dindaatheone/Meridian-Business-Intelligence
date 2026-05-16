@@ -56,4 +56,28 @@ different risk, liquidity, and fee characteristics.
 ## Setup
 
 ```bash
+psql -U postgres -c "CREATE DATABASE meridian_bi;"
+psql -U postgres -d meridian_bi -f 02_database/schema.sql
+psql -U postgres -d meridian_bi -f 02_database/seed.sql
+```
+
+Verify after seeding:
+
+```bash
+psql -U postgres -d meridian_bi -c "
+SELECT 'clients' AS table_name, COUNT(*) FROM clients
+UNION ALL
+SELECT 'portfolios', COUNT(*) FROM portfolios
+UNION ALL
+SELECT 'transactions', COUNT(*) FROM transactions;"
+```
+
+---
+
+## ERD
+
+See ERD.png in this folder. Generated via dbdiagram.io.
+Three boxes: clients, portfolios, transactions.
+Primary keys underlined. Foreign keys labeled FK.
+Crow's foot notation on the many side of each relationship.
 
