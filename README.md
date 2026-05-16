@@ -68,6 +68,7 @@ version update to the Meridian Strategic Master Guidebook.
 
 ## Repo Architecture
 
+```
 Meridian-Business-Intelligence/
 |
 |-- README.md                              <- Master overview, stack, KPIs, setup
@@ -107,7 +108,7 @@ Meridian-Business-Intelligence/
 |-- 05_visualization/
 |   |-- README.md                          <- Dashboard structure, pipeline, design rationale
 |   |-- looker_studio_link.md              <- Public dashboard URL and chart data sources
-|   |-- chart_notes.md                     <- Per-chart source query, fields, business interpretation
+|   |-- chart_notes.md                     <- Per-chart source query, fields, interpretation
 |   +-- dashboard_screenshot.png           <- Full three-page dashboard capture
 |
 |-- 06_business_report/
@@ -117,10 +118,10 @@ Meridian-Business-Intelligence/
 |   +-- business_report.pdf                <- Executive-ready final deliverable
 |
 +-- docs/
-|-- data_dictionary.md                 <- Every table, every column, data types, valid values
-|-- methodology.md                     <- Analytical approach, tool choices, pipeline rationale
-+-- CHANGELOG.md                       <- Version history as project builds
-
+    |-- data_dictionary.md                 <- Every table, every column, data types, valid values
+    |-- methodology.md                     <- Analytical approach, tool choices, pipeline rationale
+    +-- CHANGELOG.md                       <- Version history as project builds
+```
 ---
 
 ## The Data Spine
