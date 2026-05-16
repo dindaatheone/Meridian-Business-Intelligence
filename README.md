@@ -68,6 +68,59 @@ version update to the Meridian Strategic Master Guidebook.
 
 ## Repo Architecture
 
+Meridian-Business-Intelligence/
+|
+|-- README.md                              <- Master overview, stack, KPIs, setup
+|
+|-- 00_bank_profile/
+|   |-- README.md                          <- Section overview and navigation
+|   |-- bank_identity.md                   <- Founding insight, jurisdiction, competitive positioning
+|   +-- client_tiers.md                    <- HNW/VHNW/UHNW definitions, product access, special flags
+|
+|-- 01_raw_data/
+|   |-- README.md                          <- Synthetic universe parameters and generation notes
+|   |-- clients.csv                        <- 500 to 1,000 synthetic client records
+|   |-- portfolios.csv                     <- Portfolio allocations and performance per client
+|   +-- transactions.csv                   <- 24 months of monthly transaction history
+|
+|-- 02_database/
+|   |-- README.md                          <- ERD explanation and schema design decisions
+|   |-- schema.sql                         <- CREATE TABLE with constraints, types, foreign keys
+|   |-- seed.sql                           <- COPY statements loading synthetic CSVs
+|   +-- ERD.png                            <- Entity relationship diagram
+|
+|-- 03_sql_analysis/
+|   |-- README.md                          <- Query objectives and execution order
+|   |-- 01_exploratory.sql                 <- Data quality, distributions, NULL checks
+|   |-- 02_joins_and_aggregations.sql      <- Multi-table joins, AUM totals, RM productivity
+|   |-- 03_cte_window_functions.sql        <- Rankings, MoM change, rolling averages
+|   +-- 04_business_metrics.sql            <- AUM growth, concentration risk, churn, CLV, FX
+|
+|-- 04_advanced_analysis/
+|   |-- README.md                          <- Pipeline overview, why Python, run sequence
+|   |-- requirements.txt                   <- All Python dependencies with pinned versions
+|   |-- data_generation.py                 <- Generates all three synthetic CSVs
+|   |-- statistical_analysis.py            <- Descriptive stats, correlation matrix, AUM distribution
+|   |-- credit_risk_scoring.py             <- DTI and DTC ratios, four-tier risk classification
+|   +-- forecasting_model.py               <- 24-month AUM trend projection with confidence bounds
+|
+|-- 05_visualization/
+|   |-- README.md                          <- Dashboard structure, pipeline, design rationale
+|   |-- looker_studio_link.md              <- Public dashboard URL and chart data sources
+|   |-- chart_notes.md                     <- Per-chart source query, fields, business interpretation
+|   +-- dashboard_screenshot.png           <- Full three-page dashboard capture
+|
+|-- 06_business_report/
+|   |-- README.md                          <- Report structure, audience, connection to other repos
+|   |-- hypothesis_statement.md            <- Business problem and four analytical hypotheses
+|   |-- findings_summary.md                <- Findings, implications, recommendations with KPIs
+|   +-- business_report.pdf                <- Executive-ready final deliverable
+|
++-- docs/
+|-- data_dictionary.md                 <- Every table, every column, data types, valid values
+|-- methodology.md                     <- Analytical approach, tool choices, pipeline rationale
++-- CHANGELOG.md                       <- Version history as project builds
+
 ---
 
 ## The Data Spine
