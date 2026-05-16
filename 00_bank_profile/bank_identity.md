@@ -86,4 +86,10 @@ five institutions control more than 70% of booked assets, non-standard
 client profiles become economically unattractive for scaled institutions
 to serve at competitive margin. That is Meridian's entry signal.
 
-## Ethical Fra
+## Ethical Framework
+
+This is a portfolio artifact demonstrating founder-level analytical
+and strategic thinking in private banking. All data is synthetic.
+No real client data is used or referenced. Competitive analysis
+references publicly available institutional data only.
+Not a licensed institution.
