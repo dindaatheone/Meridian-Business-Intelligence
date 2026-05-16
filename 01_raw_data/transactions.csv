@@ -1,0 +1,1 @@
+transaction_id,client_id,portfolio_id,transaction_date,transaction_type,amount_usd,original_currency,fx_rate_applied,asset_class,fee_amount_usd,fee_type,rm_id,notes
