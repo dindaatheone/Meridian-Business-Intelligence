@@ -2,9 +2,7 @@
 
 Python analytical pipeline for Meridian Business Intelligence.
 All analysis is reproducible. Clone the repo, install requirements,
-run the scripts, get identical outputs. No manual steps.
-No external credentials. No proprietary data.
-
+run the scripts, get identical outputs.
 ---
 
 ## Files
