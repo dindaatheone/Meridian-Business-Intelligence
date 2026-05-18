@@ -2,8 +2,7 @@
 
 ## Founding Insight
 
-Private banking in Asia-Pacific is not a product problem.
-It is an intelligence problem. The gap between the relationship
+Private banking in Asia-Pacific has an intelligence problem. The gap between the relationship
 intelligence a private bank generates and the value it captures
 from that intelligence is Meridian's founding reason to exist.
 
@@ -20,7 +19,7 @@ Singapore. Monetary Authority of Singapore (MAS) framework.
 Selected because it is the only Asia-Pacific jurisdiction that
 simultaneously delivers regulatory credibility, political
 neutrality, tax efficiency, and proximity to all five client
-corridors. Not selected for convenience. The only defensible answer.
+corridors as the only defensible answer.
 
 ## Institutional Posture
 
