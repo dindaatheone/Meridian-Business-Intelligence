@@ -7,8 +7,7 @@
 
 ## Access
 
-Public view. No login required for portfolio reviewers.
-No database credentials needed. Open the link and the
+Public view. No login required for portfolio reviewers. Open the link and the
 dashboard loads immediately.
 
 ## Pages
