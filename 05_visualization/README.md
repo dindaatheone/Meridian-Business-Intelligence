@@ -58,6 +58,6 @@ Google Sheets pipeline over direct PostgreSQL connector:
 portfolio reviewers can open the dashboard without
 database credentials. The dashboard is fully public
 and reproducible by anyone with the repo and a
-Google account. No access friction. No setup required
+Google account. No setup required
 beyond running the SQL and importing the results.
 
