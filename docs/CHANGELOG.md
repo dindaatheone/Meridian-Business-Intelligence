@@ -1,8 +1,6 @@
 # Data Dictionary - Meridian Business Intelligence
 
-Complete field definitions for all three tables.
-Every column. Every valid value. Every business meaning.
-This is the authoritative reference for the synthetic
+Complete field definitions for all three tables. This is the authoritative reference for the synthetic
 data universe. No field exists in the CSVs or the
 PostgreSQL schema that is not documented here.
 
