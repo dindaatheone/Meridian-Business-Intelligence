@@ -38,7 +38,7 @@ chart gets translated into one of three things:
 3. Methodology Overview - data, tools, analytical approach
 4. Findings by hypothesis - confirmed or rejected with evidence
 5. Strategic Recommendations with KPIs
-6. Appendix - key charts from Looker Studio dashboard
+6. Appendix - key charts from Python dashboard outputs
 
 ---
 
