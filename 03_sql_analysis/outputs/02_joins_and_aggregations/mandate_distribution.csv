@@ -1,0 +1,10 @@
+client_tier,mandate_type,client_count,total_aum_usd
+HNW,Advisory,54,165710868.59
+HNW,Discretionary,49,154035667.51
+HNW,Execution-Only,8,31412082.24
+UHNW,Advisory,14,1684189148.99
+UHNW,Discretionary,10,1054545345.95
+UHNW,Execution-Only,3,365556471.54
+VHNW,Discretionary,27,520776667.63
+VHNW,Advisory,22,364071145.64
+VHNW,Execution-Only,13,225307035.56

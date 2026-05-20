@@ -1,0 +1,5 @@
+fee_type,transaction_count,total_fee_revenue,avg_fee_per_transaction,pct_of_total_fees
+Performance Fee,547,12357833.57,22592.02,28.23
+Advisory Fee,531,10695197.05,20141.61,24.43
+Management Fee,560,10542755.81,18826.35,24.08
+Transaction Fee,554,10179726.68,18374.96,23.25
