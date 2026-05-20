@@ -313,7 +313,7 @@ ax0.bar(x - w/2, monthly_sorted['inflows'], w,
         label='Inflows', color=GREEN, alpha=0.8, edgecolor='none')
 ax0.bar(x + w/2, monthly_sorted['outflows'], w,
         label='Outflows', color=RED, alpha=0.8, edgecolor='none')
-monthly_sorted['rolling_3m_avg'].fillna(0),
+monthly_sorted['net_flow'].rolling(3, min_periods=1).mean().fillna(0),
          color=GOLD, linewidth=2, label='3M Rolling Net Flow', zorder=5)
 tick_step = max(1, len(monthly_sorted) // 10)
 ax0.set_xticks(x[::tick_step])
