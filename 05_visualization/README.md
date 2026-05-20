@@ -1,9 +1,8 @@
 # 05 - Visualization
 
-Looker Studio dashboard connected to Meridian BI data
-via Google Sheets pipeline. Three pages. Each page answers
-a distinct business question a private bank leadership
-team would ask in a monthly review.
+Python-generated dashboard from the Meridian BI data pipeline.
+Three pages. Each page answers a distinct business question a
+private bank leadership team would ask in a monthly review.
 
 ---
 
@@ -11,9 +10,9 @@ team would ask in a monthly review.
 
 | File | Purpose |
 |---|---|
-| looker_studio_link.md | Public dashboard URL and access note |
-| chart_notes.md | Per-chart documentation - source query, fields, business interpretation |
-| dashboard_screenshot.png | Full dashboard capture - added after build |
+| generate_charts.py | Generates all three dashboard pages from SQL output CSVs |
+| chart_notes.md | Per-chart documentation: source query, fields, business interpretation |
+| outputs/ | Generated PNG dashboard pages |
 
 ---
 
@@ -29,35 +28,23 @@ team would ask in a monthly review.
 
 ## Data Pipeline
 
-Each SQL file in 03_sql_analysis maps to one or more
-charts in the dashboard. The exact mapping is documented
-in chart_notes.md.
+Each SQL file in 03_sql_analysis maps to one or more charts.
+The exact mapping is documented in chart_notes.md.
 
----
+Run order:
 
-## Build Sequence
+1. Generate synthetic data: `python 01_raw_data/generate_synthetic_data.py`
+2. Run SQL analysis: `python run_sql_analysis.py`
+3. Generate charts: `python generate_charts.py`
 
-1. Run all four SQL files in 03_sql_analysis
-2. Export each result set to CSV
-3. Import CSVs into Google Sheets
-   - One sheet per SQL query result
-   - Name each sheet to match the SQL file it came from
-4. Connect Looker Studio to the Google Sheets file
-   - Add data source: Google Sheets
-   - Select the workbook
-5. Build charts on each page using the sheet as source
-6. Publish dashboard with public access
-7. Copy URL into looker_studio_link.md
-8. Screenshot full dashboard into dashboard_screenshot.png
+All outputs land in 05_visualization/outputs/.
 
 ---
 
 ## Design Rationale
 
-Google Sheets pipeline over direct PostgreSQL connector:
-portfolio reviewers can open the dashboard without
-database credentials. The dashboard is fully public
-and reproducible by anyone with the repo and a
-Google account. No setup required
-beyond running the SQL and importing the results.
-
+Direct Python pipeline over a BI tool connector: anyone cloning
+the repo can reproduce every chart with one command. No credentials,
+no external accounts, no setup beyond the requirements.txt.
+The charts are committed outputs, not live dashboard links.
+Reproducibility is the point.
